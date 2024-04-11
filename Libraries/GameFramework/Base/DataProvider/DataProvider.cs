@@ -7,6 +7,7 @@
 
 using GameFramework.Resource;
 using System;
+using UnityEngine;
 
 namespace GameFramework
 {
@@ -192,6 +193,8 @@ namespace GameFramework
             }
 
             HasAssetResult result = m_ResourceManager.HasAsset(dataAssetName);
+            Debug.Log($"Try Load {dataAssetName}, {result.ToString()}");
+            
             switch (result)
             {
                 case HasAssetResult.AssetOnDisk:
