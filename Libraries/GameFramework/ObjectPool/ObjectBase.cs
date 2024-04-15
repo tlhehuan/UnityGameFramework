@@ -29,7 +29,7 @@ namespace GameFramework.ObjectPool
             m_Target = null;
             m_Locked = false;
             m_Priority = 0;
-            m_LastUseTime = default(DateTime);
+            m_LastUseTime = default;
         }
 
         /// <summary>
